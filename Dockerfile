@@ -10,7 +10,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     zlib1g-dev \
     libcurl4-gnutls-dev
     
-ARG WHEN
+ARG WHEN=2019-05-22
 RUN R -e "options(repos = \
   list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/${WHEN}')); \
   install.packages('devtools'); \
