@@ -6,7 +6,7 @@ This repo contains:
   RStudio version 1.2.1335 with packages "devtools" and "ssinari/smisc"
   preinstalled.  This can be used for analysis with these packages preinstalled.
   Works as of 2019-05-22.
-  - build.sh: bash script for building the docker image.
+  - hooks/build: bash script for building the docker image.
   - run.sh: bash script for running the container.  
 
 # Access
