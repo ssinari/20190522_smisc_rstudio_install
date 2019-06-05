@@ -1,8 +1,11 @@
 #!/bin/bash
-tag=${1:-"1.0"}
+path=${1:-$(pwd)}
+passwd=${2:"123456"}
+tag=${3:-"1.0"}
+
 docker pull ssinari/smisc-verse:${tag} && \
     docker run --rm \
-	   -e PASSWORD=rstudio \
+	   -e PASSWORD=$passwd \
 	   -e USERID=$(id -g $(whoami)) \
 	   -e ROOT=TRUE \
 	   -p 8787:8787 \
