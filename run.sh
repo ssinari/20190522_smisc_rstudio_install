@@ -1,6 +1,6 @@
 #!/bin/bash
 path=${1:-$(pwd)}
-passwd=${2:"123456"}
+passwd=${2:-"123456"}
 tag=${3:-"1.0"}
 
 docker pull ssinari/smisc-verse:${tag} && \
